@@ -57,10 +57,12 @@ The motivation behind this project stemmed from unreliable email sync and notifi
 ## Setup Instructions
 
 1. **Clone the Repository**:
+
    ```bash
    git clone https://github.com/atomo15/Gmail-to-Discord-Notifier.git
    ```
 2. **Google Apps Script Setup**:
+   
 - Open the [Google Apps Script dashboard](https://script.google.com/).
 - Create a new project and paste the contents of `script.gs`.
 - Configure the script properties (e.g., Discord webhook URLs, Gemini API key) in the script.
