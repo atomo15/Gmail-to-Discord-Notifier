@@ -64,3 +64,24 @@ The motivation behind this project stemmed from unreliable email sync and notifi
 - Open the [Google Apps Script dashboard](https://script.google.com/).
 - Create a new project and paste the contents of `script.gs`.
 - Configure the script properties (e.g., Discord webhook URLs, Gemini API key) in the script.
+
+3. **Google Sheets Setup**:
+
+- Create a new Google Sheet.
+- Add a cell (e.g., `A1`) to store the last processed timestamp.
+- Update the script with the Sheet ID and cell reference.
+
+4. **Set Up Triggers**:
+
+- In the Apps Script editor, go to "Triggers."
+- Add a time-driven trigger to run the script hourly.
+
+5. **Discord Webhook**:
+
+- In your Discord server, create webhooks for each target channel.
+- Copy the webhook URLs and add them to the script configuration.
+
+6. **Run the Script**:
+
+- Execute the script manually for the first run to process all emails.
+- Verify that notifications appear in Discord and the timestamp updates in Google Sheets.
