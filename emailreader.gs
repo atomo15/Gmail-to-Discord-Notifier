@@ -1,16 +1,3 @@
-
-const test_email_url = "https://discord.com/api/webhooks/abc1";
-
-const primary_noti_url = "https://discord.com/api/webhooks/abc2";
-
-const google_noti_url = "https://discord.com/api/webhooks/abc3";
-
-const indeed_noti_url = "https://discord.com/api/webhooks/abc4";
-
-const paypal_noti_url = "https://discord.com/api/webhooks/abc5";
-
-const status_url = "https://discord.com/api/webhooks/abc6";
-
 function sendToDiscord(dest_url,message)
 {
   const payload = {
@@ -45,7 +32,6 @@ function getLasttimeRead() {
       return;
     }
 
-    // Now you can work with the sheet.  For example, to get all the data:
     const data = sheet.getDataRange().getValues();
     // var time = Utilities.formatDate(data[1][0], "America/Chicago", "yyyy-MM-dd HH:mm:ss");
     // for (var i = 1; i < data.length; i++) { // เริ่มที่แถว 2 เพราะแถวแรกเป็น header
@@ -57,7 +43,6 @@ function getLasttimeRead() {
     Logger.log(new_time);
   return new_time;
 }
-
 
 function updatelastime(newlasttime) {
   // Get the spreadsheet file by name.
@@ -137,7 +122,7 @@ function getEmailsFromPrimaryCategoryToday() {
         Logger.log(lasttimeread)
         var extract_lasttime = lasttimeread.split(":")[0]
         Logger.log(extract_lasttime)
-        if(extract_lasttime<10)
+        if(extract_lasttime<10 && extract_lasttime.length == 1)
         {
           lasttimeread = "0"+lasttimeread;
         }
@@ -153,10 +138,11 @@ function getEmailsFromPrimaryCategoryToday() {
             Logger.log("New mail");
             updatelastime(newtimeread);
             notifydiscord(result,google_result,indeed_result,paypal_result);
+            sendToDiscord(status_url,"Status: Last update time: "+newtimeread);
           }
           else
           {
-            // sendToDiscord(status_url,"Status: OK");
+            sendToDiscord(status_url,"Status: No new mail come up.");
           }
           return;
         }
