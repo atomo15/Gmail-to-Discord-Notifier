@@ -96,3 +96,22 @@ Edit the following variables in `script.gs`:
 - `SHEET_ID`: The ID of your Google Sheet.
 - `TIMESTAMP_CELL`: The cell where the last timestamp is stored (e.g., `"A1"`).
 - `GEMINI_API_KEY`: Your Gemini API key for summarization and translation.
+
+## Usage
+
+- Once set up, the script runs automatically every hour.
+- Check your Discord channels for email notifications.
+- Monitor the Google Sheet for the last processed timestamp.
+
+## Limitations
+
+- Discord's 2000-character limit requires summarization for lengthy emails.
+- Dependent on Gmail's primary inbox; other labels/folders are not supported yet.
+- Gemini API usage is limited to the free tier's quota.
+
+## Future Improvements
+
+- Support for multiple Gmail accounts.
+- Customizable email filters beyond the primary inbox.
+- Enhanced AI features (e.g., sentiment analysis, priority tagging).
+- Error handling for webhook or API failures.
