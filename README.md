@@ -87,3 +87,12 @@ The motivation behind this project stemmed from unreliable email sync and notifi
 
 - Execute the script manually for the first run to process all emails.
 - Verify that notifications appear in Discord and the timestamp updates in Google Sheets.
+
+## Configuration
+
+Edit the following variables in `script.gs`:
+
+- `DISCORD_WEBHOOK_URLS`: An object mapping senders or email types to webhook URLs.
+- `SHEET_ID`: The ID of your Google Sheet.
+- `TIMESTAMP_CELL`: The cell where the last timestamp is stored (e.g., `"A1"`).
+- `GEMINI_API_KEY`: Your Gemini API key for summarization and translation.
