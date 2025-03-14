@@ -115,3 +115,13 @@ Edit the following variables in `script.gs`:
 - Customizable email filters beyond the primary inbox.
 - Enhanced AI features (e.g., sentiment analysis, priority tagging).
 - Error handling for webhook or API failures.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- Google Apps Script for the automation framework.
+- Discord for webhook integration.
+- Gemini API for free AI summarization and translation.
