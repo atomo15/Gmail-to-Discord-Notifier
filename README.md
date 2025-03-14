@@ -58,4 +58,4 @@ The motivation behind this project stemmed from unreliable email sync and notifi
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-username/gmail-to-discord-notifier.git
+   git clone https://github.com/atomo15/gmail-to-discord-notifier.git
