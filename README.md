@@ -69,8 +69,8 @@ The motivation behind this project stemmed from unreliable email sync and notifi
 
 3. **Google Sheets Setup**:
 
-- Create a new Google Sheet.
-- Add a cell (e.g., `A1`) to store the last processed timestamp.
+- Create a new Google Sheet.( `discordemailnotification` is an example sheet on code)
+- Add a cell (e.g., `A1`, `A2`) to store the last processed timestamp.
 - Update the script with the Sheet ID and cell reference.
 
 4. **Set Up Triggers**:
