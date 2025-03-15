@@ -18,7 +18,7 @@ The following table outlines the current status, updates, new features, features
 | **Project Progress**     | Initial release with hourly Gmail monitoring, Discord notifications, and Gemini API summarization. | 03/13/2025     | Completed     |
 | **Project Updates**      | Improved duplicate prevention by refining Google Sheets timestamp logic.    | 03/14/2025     | Implemented   |
 | **New Features**         | Added channel categorization based on sender or email type.                 | 03/22/2025     | In Progress   |
-| **Features Under Development** | Support for multiple groups of emails with custom categories mail on custom Discord channels.     | 04/05/2025 | Planned       |
+| **Features Under Development** | Support for grouping emails with custom categories and routing to dedicated Discord channels.     | 04/05/2025 | Planned       |
 | **Limitations**          | Restricted to primary inbox; support for other labels/folders pending.      | N/A            | Ongoing       |
 
 ### Notes
