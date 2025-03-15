@@ -9,6 +9,26 @@ This project is a Google Apps Script (`.gs`) application that automates email mo
 
 The motivation behind this project stemmed from unreliable email sync and notification issues on Android devices, especially when managing multiple Gmail accounts. By integrating AI and Discord, this tool provides a centralized, real-time solution for email tracking and content digestion.
 
+## Project Status and Roadmap
+
+The following table outlines the current status, updates, new features, features under development, and limitations of the Gmail-to-Discord Notifier project. This section will be regularly updated to reflect the project's progress.
+
+| **Category**            | **Details**                                                                 | **Date**       | **Status**    |
+|--------------------------|-----------------------------------------------------------------------------|----------------|---------------|
+| **Project Progress**     | Initial release with hourly Gmail monitoring, Discord notifications, and Gemini API summarization. | 03/13/2025     | Completed     |
+| **Project Updates**      | Improved duplicate prevention by refining Google Sheets timestamp logic.    | 03/14/2025     | Implemented   |
+| **New Features**         | Added channel categorization based on sender or email type.                 | 03/22/2025     | In Progress   |
+| **Features Under Development** | Support for multiple groups of emails with custom categories mail on custom Discord channels.     | 04/05/2025 | Planned       |
+| **Limitations**          | Restricted to primary inbox; support for other labels/folders pending.      | N/A            | Ongoing       |
+
+### Notes
+- **Status Definitions**: 
+  - *Completed*: Fully implemented and tested.
+  - *Implemented*: Recently added and in use.
+  - *In Progress*: Actively being developed.
+  - *Planned*: Scheduled for future development.
+  - *Ongoing*: Known issue or limitation to address.
+
 ## Features
 
 - **Automated Email Fetching**: Fetches emails from Gmail's primary inbox every hour using Apps Script triggers.
