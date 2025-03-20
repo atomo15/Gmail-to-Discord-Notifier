@@ -9,6 +9,17 @@ This project is a Google Apps Script (`.gs`) application that automates email mo
 
 The motivation behind this project stemmed from unreliable email sync and notification issues on Android devices, especially when managing multiple Gmail accounts. By integrating AI and Discord, this tool provides a centralized, real-time solution for email tracking and content digestion.
 
+---
+
+## Version History
+
+| Version | Description                                      | Release Date  |
+|---------|--------------------------------------------------|---------------|
+| 1.0.0   | Initial release with hourly Gmail monitoring, Discord notifications, and Gemini API summarization. | 03/13/2025    |
+| 1.1.0   | Improved duplicate prevention by refining Google Sheets timestamp logic. | 03/14/2025    |
+
+---
+
 ## Project Status and Roadmap
 
 The following table outlines the current status, updates, new features, features under development, and limitations of the Gmail-to-Discord Notifier project. This section will be regularly updated to reflect the project's progress.
@@ -18,7 +29,7 @@ The following table outlines the current status, updates, new features, features
 | **Project Progress**     | Initial release with hourly Gmail monitoring, Discord notifications, and Gemini API summarization. | 03/13/2025     | Completed     |
 | **Project Updates**      | Improved duplicate prevention by refining Google Sheets timestamp logic.    | 03/14/2025     | Implemented   |
 | **New Features**         | Added channel categorization based on sender or email type.                 | 03/22/2025     | In Progress   |
-| **Features Under Development** | Support for grouping emails with custom categories and routing to dedicated Discord channels.     | 04/05/2025 | Planned       |
+| **Features Under Development** | Planned enhancements include: (1) restructuring the data pipeline to Google Sheets for improved scalability and reliability in email tracking; (2) adding support for grouping emails by custom categories and routing them to dedicated Discord channels for better notification organization.     | 04/05/2025 | Planned       |
 | **Limitations**          | Restricted to primary inbox; support for other labels/folders pending.      | N/A            | Ongoing       |
 
 ### Notes
