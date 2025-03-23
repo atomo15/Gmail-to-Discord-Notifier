@@ -17,6 +17,7 @@ The motivation behind this project stemmed from unreliable email sync and notifi
 |---------|--------------------------------------------------|---------------|
 | 1.0.0   | Initial release with hourly Gmail monitoring, Discord notifications, and Gemini API summarization. | 03/13/2025    |
 | 1.1.0   | Improved duplicate prevention by refining Google Sheets timestamp logic. | 03/14/2025    |
+| 2.0.0   | This release introduces a sophisticated, data-driven architecture for Discord integration, utilizing Google Sheets for dynamic webhook management and AppSheet for streamlined operational oversight. | 03/23/2025    |
 
 ---
 
@@ -28,8 +29,8 @@ The following table outlines the current status, updates, new features, features
 |--------------------------|-----------------------------------------------------------------------------|----------------|---------------|
 | **Project Progress**     | Initial release with hourly Gmail monitoring, Discord notifications, and Gemini API summarization. | 03/13/2025     | Completed     |
 | **Project Updates**      | Improved duplicate prevention by refining Google Sheets timestamp logic.    | 03/14/2025     | Implemented   |
-| **New Features**         | Added channel categorization based on sender or email type.                 | 03/22/2025     | In Progress   |
-| **Features Under Development** | Planned enhancements include: (1) restructuring the data pipeline to Google Sheets for improved scalability and reliability in email tracking; (2) adding support for grouping emails by custom categories and routing them to dedicated Discord channels for better notification organization.     | 04/05/2025 | Planned       |
+| **New Features**         | Restructuring the data pipeline to Google Sheets for improved scalability and reliability in email tracking;  Added channel categorization based on sender or email type.                 | 03/22/2025     | Implemented  |
+| **Features Under Development** | Planned enhancements include: (1) adding support for grouping emails by custom categories and routing them to dedicated Discord channels for better notification organization.     | 04/05/2025 | Planned       |
 | **Limitations**          | Restricted to primary inbox; support for other labels/folders pending.      | N/A            | Ongoing       |
 
 ### Notes
@@ -47,7 +48,7 @@ The following table outlines the current status, updates, new features, features
   1. Sender
   2. Subject
   3. Content (summarized and translated if enabled)
-- **Channel Categorization**: Routes notifications to specific Discord channels based on sender or email type.
+- **Channel Categorization**: Routes notifications to specific Discord channels based on sender or email type linked to Google Sheet.
 - **AI-Powered Summarization**: Uses the free Gemini API (v1.5) to summarize email content and translate it into Thai for better accessibility.
 - **Duplicate Prevention**: Tracks the last processed email timestamp in a Google Sheet to avoid redundant notifications.
 - **Character Limit Handling**: Summarizes content to fit Discord's 2000-character message limit.
